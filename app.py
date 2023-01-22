@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 def getAllBookstore():
-    url = 'https://cloud.culture.tw/frontsite/trans/emapOpenDataAction.do?method=exportEmapJson&typeId=M' # 在這裡輸入目標 url
+    url = 'https://cloud.culture.tw/frontsite/trans/emapOpenDataAction.do?method=exportEmapJson&typeId=M'
     headers = {"accept": "application/json"}
     response = requests.get(url, headers=headers)
     res = response.json()
